@@ -3,15 +3,19 @@
 #include "HumanB.hpp"
 
 int main(void) {
-	Weapon club("Spiked club");
-	HumanA josh("Josh", club);
-	josh.attack();
-	club.setType("Other weapon");
-	josh.attack();
-	Weapon spike("Simple spike");
-	HumanB sam("Sam");
-	sam.setWeapon(spike);
-	sam.attack();
-	spike.setType("Other weapon");
-	sam.attack();
+	{
+		Weapon club = Weapon("crude spiked club");
+		HumanA bob("Bob", club);
+		bob.attack();
+		club.setType("some other type of club");
+		bob.attack();
+	}
+	{
+		Weapon club = Weapon("crude spiked club");
+		HumanB jim("Jim");
+		jim.setWeapon(club);
+		jim.attack();
+		club.setType("some other type of club");
+		jim.attack();
+	}
 }

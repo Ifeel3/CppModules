@@ -5,5 +5,9 @@ int main(void) {
 	std::string* stringPTR = &test;
 	std::string& stringREF = test;
 
+	std::cout << &test << std::endl;
+	std::cout << stringPTR << std::endl;
+	std::cout << &stringREF << std::endl;
+
 	std::cout << *stringPTR << std::endl << stringREF <<std::endl;
 }

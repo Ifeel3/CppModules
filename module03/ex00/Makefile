@@ -1,18 +1,18 @@
-NAME	= ClapTrap
+NAME	= a.out
 SRC		= ClapTrap.cpp main.cpp
 OBJ		= $(SRC:%.cpp=%.o)
-CC		= clang++
-CFLAGS	= -Wall -Werror -Wextra -std=c++98 -Wno-shadow
+CXXFLAGS= -Wall -Werror -Wextra -std=c++98
+CXX		= clang++
 
 .PHONY: all clean fclean re
 
 %.o: %.cpp
-	$(CC) $(CFLAGS) -c $? -o $@
+	$(CXX) $(CXXFLAGS) -c $? -o $@
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $@
+	$(CXX) $(OBJ) -o $@
 
 clean:
 	rm -f $(OBJ)

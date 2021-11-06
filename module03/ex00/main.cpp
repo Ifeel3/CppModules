@@ -2,11 +2,10 @@
 
 int main()
 {
-	ClapTrap clap("CL4P-TP");
-	clap.attack("Skag Pup");
-	clap.takeDamage(5);
-	clap.beRepaired(5);
-	clap.takeDamage(11);
-	clap.beRepaired(5);
+	ClapTrap kek("CL4P-TP", 10, 10, 0);
+	kek.attack("Skag");
+	kek.takeDamage(5);
+	kek.beRepaired(5);
+	kek.takeDamage(10);
 	return 0;
 }

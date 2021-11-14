@@ -1,0 +1,6 @@
+.idea
+CMakeLists.txt
+cmake-build-debug
+.DS_Store
+a.out
+*.o

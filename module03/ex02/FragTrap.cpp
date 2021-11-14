@@ -1,10 +1,10 @@
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 FragTrap::~FragTrap() {
 	std::cout << "FragTrap with name " << name_ << " has been destroyed" << std::endl;
 }
 
-FragTrap::FragTrap(std::string name) : ClapTrap(name), name_(name), hitpoints_(100), energypoints_(50), attackdamage_(20){
+FragTrap::FragTrap(std::string name) : ClapTrap(name), name_(name), hitpoints_(100), energypoints_(100), attackdamage_(30){
 	std::cout << "FragTrap with name " << name_ << " has been created("
 	<< hitpoints_ << "hp, "
 	<< energypoints_ << "ep, "
@@ -52,6 +52,6 @@ void FragTrap::beRepaired(unsigned int amount) {
 		std::cout << "FragTrap with name " << name_ << " repair failed... his died" << std::endl;
 }
 
-void FragTrap::guardGate(void) {
-	std::cout << "FragTrap with name " << name_ << " entered in Gate keeper mode" << std::endl;
+void FragTrap::highFiveGuys() {
+	std::cout << name_ << ": Secret handshake!!!" << std::endl;
 }

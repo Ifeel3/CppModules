@@ -1,9 +1,9 @@
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main()
 {
 	FragTrap kek("CL4P-TP");
-	kek.guardGate();
+	kek.highFiveGuys();
 	kek.attack("Skag");
 	kek.takeDamage(5);
 	kek.beRepaired(5);

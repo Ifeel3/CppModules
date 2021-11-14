@@ -1,5 +1,5 @@
-#ifndef SCAVTRAP_HPP
-# define SCAVTRAP_HPP
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 # include "ClapTrap.hpp"
 
 class FragTrap : public ClapTrap {
@@ -19,6 +19,6 @@ public:
 	void attack(const std::string& target) const;
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
-	void guardGate(void);
+	void highFiveGuys(void);
 };
 #endif

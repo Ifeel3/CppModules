@@ -1,9 +1,9 @@
-#include "ScavTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main()
 {
-	ScavTrap kek("CL4P-TP");
-	kek.guardGate();
+	DiamondTrap kek("CL4P-TP");
+	kek.whoAmI();
 	kek.attack("Skag");
 	kek.takeDamage(5);
 	kek.beRepaired(5);

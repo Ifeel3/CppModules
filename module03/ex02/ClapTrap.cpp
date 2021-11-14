@@ -28,26 +28,25 @@ ClapTrap& ClapTrap::operator=(const ClapTrap &copy) {
 }
 
 void ClapTrap::takeDamage(unsigned int amount) {
-	std::cout << "ClapTrap with name " << name_ << " take " << amount << " damage" << std::endl;
+	std::cout << name_ << " take " << amount << " damage" << std::endl;
 	if (amount < hitpoints_)
 		hitpoints_ -= amount;
 	else {
-		std::cout << "ClapTrap with name " << name_ << " died" << std::endl;
+		std::cout << name_ << " died" << std::endl;
 		hitpoints_ = 0;
 	}
 }
 
 void ClapTrap::attack(const std::string &target) const {
-	std::cout << "ClapTrap with name "
-	<< name_ << " attack " << target << " and deals "
+	std::cout << name_ << " attack " << target << " and deals "
 	<< attackdamage_ << " damage" << std::endl;
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
 	if (hitpoints_ > 0) {
-		std::cout << "ClapTrap with name " << name_ << " repaired by " << amount << " point(s)" << std::endl;
+		std::cout << name_ << " repaired by " << amount << " point(s)" << std::endl;
 		hitpoints_ += amount;
 	}
 	else
-		std::cout << "ClapTrap with name " << name_ << " repair failed... his died" << std::endl;
+		std::cout << name_ << " repair failed... his died" << std::endl;
 }

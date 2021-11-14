@@ -2,7 +2,7 @@
 # define SCAVTRAP_HPP
 # include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap {
+class ScavTrap : virtual public ClapTrap {
 
 public:
 	ScavTrap(std::string name);
@@ -10,6 +10,6 @@ public:
 	ScavTrap(ScavTrap& copy);
 
 	ScavTrap& operator=(const ScavTrap& copy);
-	void guardGate(void);
+	virtual void guardGate(void);
 };
 #endif

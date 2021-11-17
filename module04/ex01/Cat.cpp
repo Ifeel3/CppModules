@@ -11,9 +11,10 @@ Cat::~Cat() {
 	std::cout << "Deleting brain for " << type << std::endl;
 	delete brain;
 	std::cout << type << " has been deleted" << std::endl;
+	type = "Animal";
 }
 
-Cat::Cat(const Cat &copy) {
+Cat::Cat(const Cat& copy) : Animal() {
 	*this = copy;
 }
 

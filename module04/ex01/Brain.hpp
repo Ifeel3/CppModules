@@ -11,6 +11,6 @@ public:
 	~Brain(void);
 	Brain(const Brain& copy);
 
-	Brain& operator=(const Brain& copy)
+	Brain& operator=(const Brain& copy);
 };
 #endif
